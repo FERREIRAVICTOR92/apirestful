@@ -1,0 +1,39 @@
+um exemplo de como uma API RESTful poder ser estruturada:
+
+Suponha que estamos criando uma API para gerenciar uma lista de tarefas. A seguir, estão alguns exemplos de como os endpoints da API poderiam ser definidos:
+
+Listar todas as tarefas:
+
+GET /api/tasks
+Obter uma tarefa específica pelo ID:
+
+GET /api/tasks/{id}
+
+Criar uma nova tarefa:
+
+POST /api/tasks
+Corpo da requisição:
+
+
+{
+    "title": "Comprar leite",
+    "description": "Comprar leite no mercado da esquina",
+    "completed": false
+}
+
+Atualizar uma tarefa existente:
+
+PUT /api/tasks/{id}
+Corpo da requisição:
+
+
+{
+    "title": "Comprar leite",
+    "description": "Comprar leite no mercado da esquina",
+    "completed": true
+}
+
+Excluir uma tarefa:
+
+DELETE /api/tasks/{id}
+Esses endpoints seguem as melhores práticas para uma API RESTful. Eles usam verbos HTTP para indicar a ação a ser realizada (GET, POST, PUT, DELETE) e seguem uma estrutura de URL consistente e previsível. Além disso, eles usam o corpo da requisição para enviar dados de payload, quando necessário.
